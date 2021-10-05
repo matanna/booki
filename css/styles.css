@@ -1,0 +1,7 @@
+/* Global properties ===================================================== */
+@import url('https://fonts.google.com/specimen/Raleway');
+
+body {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
