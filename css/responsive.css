@@ -1,0 +1,56 @@
+/* Responsives properties ======================================= */
+
+/* Tablet and smartphone properties ============== */
+@media screen and (max-width: 992px) {
+
+    /* Global */
+    body {
+        padding: 0;
+    }
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        margin: 0;
+        padding: 40px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        width: 50%;
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 2px solid #DEEBFF;
+    }
+
+    header nav ul li:hover {
+        border-top: none;
+        padding-top: 20px;
+        border-bottom: 3px solid #0065FC;
+    }
+
+}
+
+/* Only tablet properties ======================== */
+@media screen and (min-width: 768px) and (min-width: 991px) {
+
+}
+
+/* Only smartphone properties ==================== */
+@media screen and (max-width: 767px) {
+
+    
+
+}
