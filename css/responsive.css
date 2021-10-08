@@ -1,22 +1,33 @@
 /* Responsives properties ======================================= */
 
+/* All screen under 1200px */
+@media screen and (max-width: 1199px) {
+
+    /* Section search */
+    #search-filters {
+        gap: 15px;
+    }
+
+    #search-filters ul {
+        gap: 15px;
+    }
+} 
+
 /* Tablet and smartphone properties ============== */
 @media screen and (max-width: 992px) {
 
-    /* Global */
-    body {
-        padding: 0;
+    /* GLOBAL PROPERTIES */
+    .card,
+    .card:hover {
+        transform: none;
+        transition: none;
     }
 
-    /* HEADER */
+    /* HEADER ============================== */
     header {
         flex-direction: column;
         align-items: center;
-    }
-
-    header img {
-        margin: 0;
-        padding: 40px;
+        padding: 0;
     }
 
     header nav {
@@ -28,11 +39,10 @@
     }
 
     header nav ul li {
-        margin-left: 0;
         width: 50%;
         padding: 20px 0;
         text-align: center;
-        border-bottom: 2px solid #DEEBFF;
+        border-bottom: 3px solid #DEEBFF;
     }
 
     header nav ul li:hover {
@@ -41,16 +51,144 @@
         border-bottom: 3px solid #0065FC;
     }
 
+    /* MAIN =============================== */
+
+    /* Section search ============== */
+    #search > * {
+        margin: 40px 0;
+    }
+
+    #search-form form button {
+        padding: 0;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    #search-form form .fa-search {
+        display: inline;
+        background-color: transparent;
+        color: #ffffff;  
+    }
+    
+    #search-form form .search-text-button {
+        display: none;
+    }
+
+    #search-info p {
+        margin: 0;
+    }
+
+    #search-filters ul li,
+    #search-filters ul li:hover {
+        transform: none;
+        transition: none;
+    }
+
+    /* Section accomodations ====== */
+    #accomodations {
+        flex-basis: 100%;
+        order: 2;
+        background-color: transparent;
+    }
+
+    #accomodations .card {
+        width: 100%;
+    }
+
+    #accomodations .card img {
+        height: 300px;
+    }
+
+    #accomodations-popular {
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    #accomodations-popular .accomodation-img {
+        height: 200px;
+    }
+
 }
 
 /* Only tablet properties ======================== */
-@media screen and (min-width: 768px) and (min-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* HEADER */
+    header img {
+        padding: 40px;
+    }
+
+    /* SECTION SEARCH */
+    
 
 }
 
 /* Only smartphone properties ==================== */
 @media screen and (max-width: 767px) {
 
-    
+    /* GLOBAL PROPERTIES */
+    h1 {
+        font-size: 22px;
+    }
 
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        margin-top: 10px;
+    }
+    
+    p, a {
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    /* HEADER */
+    header img {
+        width: 80px;
+        padding: 20px;
+    }
+
+    /* SECTION SEARCH */
+    #search {
+        padding: 0 10px;
+    }
+
+    #search-form form i,
+    #search-form form .fa-search {
+        padding: 15px 20px;
+    }
+
+    /* SECTION ACCOMODATIONS */
+    .accomodations {
+        padding: 20px 20px;
+    }
+
+    .accomodations .fa-star {
+        font-size: 12px;
+    }
+
+    #accomodations .card img {
+        height: 120px;
+    }
+
+    #accomodations-popular {
+        border-radius: 0;
+    }
+
+    #accomodations-popular .accomodation-img {
+        height: 130px;
+    }
 }
