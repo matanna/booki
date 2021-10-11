@@ -25,7 +25,7 @@ h1 {
 
 h2 {
     font-size: 24px;
-    margin-bottom: 30px;
+    margin: 0;
 }
 
 h3 {
@@ -92,7 +92,6 @@ button:hover {
 }
 
 .more {
-    margin-top: 10px;
     font-weight: bold;
 }
 
@@ -139,7 +138,6 @@ main {
     border-radius: 20px;
     background-color: #ffffff;
     padding: 5px;
-    margin-bottom: 30px;
     box-shadow: 0px 0px 10px #e2dfdf;
     transform: scale(1);
     transition: transform 0.25s ease-in-out;
@@ -283,14 +281,23 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 700px;
 }
 
 .accomodations {
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 2%;
     box-sizing: border-box;
     margin-top: 0;
+    height: 100%;
+}
+
+.accomodations h2 {
+    height: 9%;
+    flex-shrink: 2;
 }
 
 #accomodations-container .card-details > * {
@@ -315,14 +322,28 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex: 0 82%;
+    align-content: space-between;
 }
 
 #accomodations .card {
     width: 30%;
+    margin: 2% 0;
 }
 
 #accomodations .card img {
     height: 130px;
+}
+
+#accomodations .more {
+    height: 9%;
+    flex-shrink: 2;
+    position: relative;
+}
+
+#accomodations .more a {
+    position: absolute;
+    bottom: 0;
 }
 
 /* Section accomodations popular ========================== */
@@ -339,8 +360,15 @@ main {
     color: #000000;
 }
 
+#accomodations-popular-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+}
 #accomodations-popular .card {
     display:flex;
+    
 }
 
 #accomodations-popular .accomodation-img {
@@ -364,10 +392,15 @@ main {
 }
 
 /* Section activities =================================== */
+#activities {
+    margin-top: 60px;
+}
+
 #activities-content {
     display: flex;
     flex-flow: column wrap;
     height: 500px;
+    margin-top: 3%;
     justify-content: space-between;
     align-content: space-between;
 }

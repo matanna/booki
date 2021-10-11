@@ -23,6 +23,10 @@
         transition: none;
     }
 
+    h2 {
+        margin: 20px 0;
+    }
+
     /* HEADER ============================== */
     header {
         flex-direction: column;
@@ -88,6 +92,11 @@
     }
 
     /* Section accomodations ====== */
+
+    #accomodations-container {
+        height: inherit;
+    }
+
     #accomodations {
         flex-basis: 100%;
         order: 2;
@@ -103,7 +112,15 @@
         order: 1;
     }
 
+    #accomodations .more {
+        height: 50px;
+    }
+
     /* Section activities =================================== */
+    #activities {
+        margin-top: 0;
+    }
+    
     #activities-content {
         height: inherit;
         gap: 30px;
@@ -123,6 +140,10 @@
     }
 
     /* SECTION ACCOMODATIONS */
+    .card {
+        margin-bottom: 20px;
+    }
+
     #accomodations .card img {
         height: 300px;
     }
@@ -179,7 +200,7 @@
     }
 
     section {
-        margin: 20px 0;
+        margin: 0;
     }
 
     .card {
