@@ -127,7 +127,7 @@ header nav ul li:hover {
     align-self: center;
     max-width: 1400px;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 1%;
 }
 
 main {
@@ -288,7 +288,7 @@ main {
 .accomodations {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 30px 2%;
+    padding: 2%;
     box-sizing: border-box;
     margin-top: 0;
 }
@@ -370,7 +370,6 @@ main {
     height: 500px;
     justify-content: space-between;
     align-content: space-between;
-   
 }
 
 #activities .card {

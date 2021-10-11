@@ -204,7 +204,7 @@
 
     /* SECTION ACCOMODATIONS */
     .accomodations {
-        padding: 20px 20px;
+        padding: 5%;
     }
 
     .accomodations .fa-star {
@@ -225,7 +225,7 @@
 
     /* SECTION ACTIVITIES */
     #activities {
-        padding: 0 20px;
+        padding: 5%;
     }
 
     #activities-content .card .activities-img {
