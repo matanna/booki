@@ -288,7 +288,7 @@ main {
 .accomodations {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 30px 40px;
+    padding: 30px 2%;
     box-sizing: border-box;
     margin-top: 0;
 }
@@ -366,8 +366,7 @@ main {
 /* Section activities =================================== */
 #activities-content {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     height: 500px;
     justify-content: space-between;
     align-content: space-between;
