@@ -14,6 +14,10 @@ body {
     flex-direction: column;
 }
 
+section {
+    margin: 30px 0;
+}
+
 h1 {
     font-size: 27px;
     letter-spacing: 1px;
@@ -118,6 +122,7 @@ header nav ul li:hover {
     color: #0065FC;
 }
 
+/* Main ================================================================================================= */
 #main-container {
     align-self: center;
     max-width: 1400px;
@@ -125,18 +130,17 @@ header nav ul li:hover {
     padding: 0 10px;
 }
 
-/* Main ================================================================================================= */
-
 main {
     padding: 0 20px;
 }
 
 .card {
+    box-sizing: border-box;
     border-radius: 20px;
     background-color: #ffffff;
     padding: 5px;
     margin-bottom: 30px;
-    box-shadow: 0px 0px 15px #cfcccc;
+    box-shadow: 0px 0px 10px #e2dfdf;
     transform: scale(1);
     transition: transform 0.25s ease-in-out;
 }
@@ -149,9 +153,16 @@ main {
 
 .card img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.card-details {
+    padding: 0 0 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Section search ====================================================== */
@@ -279,21 +290,20 @@ main {
     border-radius: 20px;
     padding: 30px 40px;
     box-sizing: border-box;
+    margin-top: 0;
 }
 
-.accomodation-details {
-    padding: 0 0 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.accomodation-details > * {
+#accomodations-container .card-details > * {
     width: 100%;
 }
 
-.accomodation-details p {
+#accomodations-container .card-details p {
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+#accomodations-container .card-details ul {
+    align-items: flex-end;
 }
 
 /* Section accomodations ================================== */
@@ -345,10 +355,91 @@ main {
     height: 100%;
 }
 
-#accomodations-popular .accomodation-details {
+#accomodations-popular .card-details {
     width: 60%;
 }
 
-#accomodations-popular .accomodation-details ul {
+#accomodations-popular .card-details ul {
     align-self: flex-end;
+}
+
+/* Section activities =================================== */
+#activities-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    justify-content: space-between;
+    align-content: space-between;
+   
+}
+
+#activities .card {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin: 0;
+    padding: 0;
+}
+
+#activities .card .activities-img {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#activities .card .card-details {
+    padding: 10px 10px;
+}
+
+#activities .card .card-details h3{
+    margin: 10px 0;
+}
+
+.activity {
+   height: 100%;
+}
+
+.activity2 {
+    height: 52%;
+}
+
+.activity3 {
+    height: 38%;
+}
+
+.activity56 {
+    height: 45%;
+}
+
+/* Footer =========================================================== */
+#footer-container {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+footer {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 30px;
+}
+
+footer section {
+    width: 33.33333%;
+}
+
+footer section ul{
+    flex-direction: column;
+}
+
+footer section h4 {
+    font-size: inherit;
+    margin-bottom: 20px;
+}
+
+footer section ul li {
+    margin: 10px 0;
 }
