@@ -122,6 +122,8 @@ header nav ul li:hover {
 }
 
 /* Main ================================================================================================= */
+
+/* Global main properties ============================================ */
 #main-container {
     align-self: center;
     max-width: 1400px;
@@ -177,7 +179,7 @@ main {
     margin-top: 10px;
 }
 
-/* Search form ========================================== */
+/* Search form ================================== */
 #search-form {
     display: flex;
 }
@@ -216,7 +218,7 @@ main {
     display: none;
 }
 
-/* Search filters ====================================== */
+/* Search filters ================================ */
 #search-filters {
     display: flex;
     flex-wrap: wrap;
@@ -260,7 +262,7 @@ main {
     padding: 0 20px 0 10px;
 }
 
-/* Search info ========================================== */
+/* Search info =================================== */
 #search-info {
     display: flex;
     align-items: center;
@@ -277,6 +279,7 @@ main {
 
 /* Block accomodations-container ========================================================================= */
 
+/* Properties for both accomodations sections */
 #accomodations-container {
     display: flex;
     justify-content: space-between;
@@ -391,7 +394,7 @@ main {
     align-self: flex-end;
 }
 
-/* Section activities =================================== */
+/* Section activities ================================================================================ */
 #activities {
     margin-top: 60px;
 }
@@ -442,7 +445,7 @@ main {
     height: 45%;
 }
 
-/* Footer =========================================================== */
+/* Footer =================================================================================================== */
 #footer-container {
     background-color: #F2F2F2;
     display: flex;

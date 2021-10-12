@@ -1,6 +1,6 @@
-/* Responsives properties ======================================= */
+/* Responsives properties ============================================================================================= */
 
-/* All screen under 1200px */
+/* All screen under 1200px =============================================== */
 @media screen and (max-width: 1199px) {
 
     /* Section search */
@@ -13,10 +13,10 @@
     }
 } 
 
-/* Tablet and smartphone properties ============== */
+/* Tablet and smartphone properties (All screen under 992px) ============= */
 @media screen and (max-width: 992px) {
 
-    /* GLOBAL PROPERTIES */
+    /* Global properties ================================== */
     .card,
     .card:hover {
         transform: none;
@@ -27,7 +27,7 @@
         margin: 20px 0;
     }
 
-    /* HEADER ============================== */
+    /* Header ============================================ */
     header {
         flex-direction: column;
         align-items: center;
@@ -55,12 +55,12 @@
         border-bottom: 3px solid #0065FC;
     }
 
-    /* MAIN =============================== */
+    /* Main ============================================ */
     #main-container {
         padding: 0;
     }
 
-    /* Section search ============== */
+    /* Section search ====================== */
     #search > * {
         margin: 40px 0;
     }
@@ -91,8 +91,7 @@
         transition: none;
     }
 
-    /* Section accomodations ====== */
-
+    /* Section accomodations ============= */
     #accomodations-container {
         height: inherit;
     }
@@ -131,15 +130,15 @@
     }
 }
 
-/* Only tablet properties ======================== */
+/* Only tablet properties (All screen above 767 and under 992px) ======================== */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    /* HEADER */
+    /* Header ============================================== */
     header img {
         padding: 40px;
     }
 
-    /* SECTION ACCOMODATIONS */
+    /* Section accomodations =============================== */
     .card {
         margin-bottom: 20px;
     }
@@ -152,7 +151,7 @@
         height: 200px;
     }
 
-    /* SECTION ACTIVITIES */
+    /* Section activities ================================== */
     #activities-content .card .activities-img {
         height: 300px;
     }
@@ -161,7 +160,7 @@
         padding: 0 2%;
     }
 
-    /* FOOTER */
+    /* Footer ============================================== */
     footer {
         justify-content: space-between;
     }
@@ -171,10 +170,10 @@
     }
 }
 
-/* Only smartphone properties ==================== */
+/* Only smartphone properties (All screen under 768px) ================================ */
 @media screen and (max-width: 767px) {
 
-    /* GLOBAL PROPERTIES */
+    /* Global properties ================================== */
     h1 {
         font-size: 22px;
     }
@@ -207,13 +206,13 @@
         margin-bottom: 10px;
     }
 
-    /* HEADER */
+    /* Header ========================================= */
     header img {
         width: 80px;
         padding: 20px;
     }
 
-    /* SECTION SEARCH */
+    /* Section search ================================= */
     #search {
         padding: 0 10px;
     }
@@ -223,7 +222,7 @@
         padding: 15px 20px;
     }
 
-    /* SECTION ACCOMODATIONS */
+    /* Section accomodations ========================== */
     .accomodations {
         padding: 5%;
     }
@@ -244,7 +243,7 @@
         height: 130px;
     }
 
-    /* SECTION ACTIVITIES */
+    /* Section activities =========================== */
     #activities {
         padding: 5%;
     }
@@ -253,7 +252,7 @@
         height: 120px;
     }
 
-    /* FOOTER */
+    /* Footer ======================================= */
     footer {
         flex-direction: column;
     }
