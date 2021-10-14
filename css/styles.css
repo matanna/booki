@@ -4,6 +4,12 @@
 
 html {
     scroll-behavior: smooth;
+    --blue : #0065FC;
+    --light-blue: #DEEBFF;
+    --grey : #F2F2F2;
+    --grey-shadow: #d1cece;
+    --white : #ffffff;
+    --black : #000000;
 }
 
 body {
@@ -39,15 +45,15 @@ a {
 }
 
 a:hover {
-    color: #0065FC;
+    color: var(--blue);
 }
 
 i {
-    color: #0065FC;
+    color: var(--blue);
 }
 
 .i-grey {
-    color: #F2F2F2;
+    color: var(--grey);
 }
 
 .icon-box {
@@ -79,16 +85,16 @@ input:focus-visible {
 }
 
 button {
-    background: #0065FC;
-    color: #ffffff;
+    background: var(--blue);
+    color: var(--white);
     border: none;
     font-weight: bold;
     padding: 15px;
 }
 
 button:hover {
-    background: #F2F2F2;
-    color: #0065FC
+    background: var(--grey);
+    color: var(--blue);
 }
 
 .more {
@@ -116,9 +122,9 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    border-top: 3px solid #0065FC;
+    border-top: 3px solid var(--blue);
     padding-top: 57px;
-    color: #0065FC;
+    color: var(--blue);
 }
 
 /* Main ================================================================================================= */
@@ -138,9 +144,9 @@ main {
 .card {
     box-sizing: border-box;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: var(--white);
     padding: 5px;
-    box-shadow: 0px 0px 10px #e2dfdf;
+    box-shadow: 0px 0px 10px var(--grey-shadow);
     transform: scale(1);
     transition: transform 0.25s ease-in-out;
 }
@@ -148,7 +154,7 @@ main {
 .card:hover {
     transform: scale(1.05);
     transition: transform 0.25s ease-in-out;
-    color: #000000;
+    color: var(--black);
 }
 
 .card img {
@@ -186,19 +192,19 @@ main {
 
 #search-form form {
     display: flex;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
     border-radius: 20px;
 }
 
 #search-form form:hover,
 #search-form form:focus-within {
-    outline: 2px solid #DEEBFF;
+    outline: 2px solid var(--light-blue);
 }
 
 #search-form form i {
-    color: #000000;
-    background-color: #F2F2F2;
+    color: var(--black);
+    background-color: var(--grey);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 20px 25px;
@@ -237,7 +243,7 @@ main {
 #search-filters ul li {
     display: flex;
     align-items: center;
-    border: 2px solid #F2F2F2;
+    border: 2px solid var(--grey);
     border-radius: 33px;
     box-sizing: border-box;
     transform: scale(1) translateY(3px);
@@ -245,8 +251,8 @@ main {
 }
 
 #search-filters ul li:hover {
-    color: #0065FC;
-    background-color: #F2F2F2;
+    color: var(--blue);
+    background-color: var(--grey);
     transform: scale(1.05) translateY(-3px);
     transition: transform 0.25s ease-in-out;
 }
@@ -254,8 +260,8 @@ main {
 .search-filter-icon {
     width: 55px;
     height: 55px;
-    background-color: #DEEBFF;
-    outline: 2px solid #DEEBFF;
+    background-color: var(--light-blue);
+    outline: 2px solid var(--light-blue);
 }
 
 .search-filter a {
@@ -274,7 +280,7 @@ main {
     flex-shrink: 0;
     height: 25px;
     font-size: 13px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid var(--grey);
 }
 
 /* Block accomodations-container ========================================================================= */
@@ -290,7 +296,7 @@ main {
 .accomodations {
     display: flex;
     flex-direction: column;
-    background-color: #F2F2F2;
+    background-color: var(--grey);
     border-radius: 20px;
     padding: 2%;
     box-sizing: border-box;
@@ -360,7 +366,7 @@ main {
 }
 
 #accomodations-popular h2 i {
-    color: #000000;
+    color: var(--black);
 }
 
 #accomodations-popular-content {
@@ -447,7 +453,7 @@ main {
 
 /* Footer =================================================================================================== */
 #footer-container {
-    background-color: #F2F2F2;
+    background-color: var(--grey);
     display: flex;
     justify-content: center;
     margin-top: 30px;

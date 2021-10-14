@@ -46,13 +46,13 @@
         width: 50%;
         padding: 20px 0;
         text-align: center;
-        border-bottom: 3px solid #DEEBFF;
+        border-bottom: 3px solid var(--grey);
     }
 
     header nav ul li:hover {
         border-top: none;
         padding-top: 20px;
-        border-bottom: 3px solid #0065FC;
+        border-bottom: 3px solid var(--blue);
     }
 
     /* Main ============================================ */
@@ -74,7 +74,7 @@
     #search-form form .fa-search {
         display: inline;
         background-color: transparent;
-        color: #ffffff;  
+        color: var(--white);  
     }
     
     #search-form form .search-text-button {
