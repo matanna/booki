@@ -4,6 +4,12 @@
 
 html {
     scroll-behavior: smooth;
+    --blue : #0065FC;
+    --light-blue: #DEEBFF;
+    --grey : #F2F2F2;
+    --grey-shadow: #d1cece;
+    --white : #ffffff;
+    --black : #000000;
 }
 
 body {
@@ -25,7 +31,7 @@ h1 {
 
 h2 {
     font-size: 24px;
-    margin-bottom: 30px;
+    margin: 0;
 }
 
 h3 {
@@ -39,15 +45,15 @@ a {
 }
 
 a:hover {
-    color: #0065FC;
+    color: var(--blue);
 }
 
 i {
-    color: #0065FC;
+    color: var(--blue);
 }
 
 .i-grey {
-    color: #F2F2F2;
+    color: var(--grey);
 }
 
 .icon-box {
@@ -79,20 +85,19 @@ input:focus-visible {
 }
 
 button {
-    background: #0065FC;
-    color: #ffffff;
+    background: var(--blue);
+    color: var(--white);
     border: none;
     font-weight: bold;
     padding: 15px;
 }
 
 button:hover {
-    background: #F2F2F2;
-    color: #0065FC
+    background: var(--grey);
+    color: var(--blue);
 }
 
 .more {
-    margin-top: 10px;
     font-weight: bold;
 }
 
@@ -117,12 +122,14 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    border-top: 3px solid #0065FC;
+    border-top: 3px solid var(--blue);
     padding-top: 57px;
-    color: #0065FC;
+    color: var(--blue);
 }
 
 /* Main ================================================================================================= */
+
+/* Global main properties ============================================ */
 #main-container {
     align-self: center;
     max-width: 1400px;
@@ -137,10 +144,9 @@ main {
 .card {
     box-sizing: border-box;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: var(--white);
     padding: 5px;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 10px #e2dfdf;
+    box-shadow: 0px 0px 10px var(--grey-shadow);
     transform: scale(1);
     transition: transform 0.25s ease-in-out;
 }
@@ -148,7 +154,7 @@ main {
 .card:hover {
     transform: scale(1.05);
     transition: transform 0.25s ease-in-out;
-    color: #000000;
+    color: var(--black);
 }
 
 .card img {
@@ -179,26 +185,26 @@ main {
     margin-top: 10px;
 }
 
-/* Search form ========================================== */
+/* Search form ================================== */
 #search-form {
     display: flex;
 }
 
 #search-form form {
     display: flex;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
     border-radius: 20px;
 }
 
 #search-form form:hover,
 #search-form form:focus-within {
-    outline: 2px solid #DEEBFF;
+    outline: 2px solid var(--light-blue);
 }
 
 #search-form form i {
-    color: #000000;
-    background-color: #F2F2F2;
+    color: var(--black);
+    background-color: var(--grey);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 20px 25px;
@@ -218,7 +224,7 @@ main {
     display: none;
 }
 
-/* Search filters ====================================== */
+/* Search filters ================================ */
 #search-filters {
     display: flex;
     flex-wrap: wrap;
@@ -237,7 +243,7 @@ main {
 #search-filters ul li {
     display: flex;
     align-items: center;
-    border: 2px solid #F2F2F2;
+    border: 2px solid var(--grey);
     border-radius: 33px;
     box-sizing: border-box;
     transform: scale(1) translateY(3px);
@@ -245,8 +251,8 @@ main {
 }
 
 #search-filters ul li:hover {
-    color: #0065FC;
-    background-color: #F2F2F2;
+    color: var(--blue);
+    background-color: var(--grey);
     transform: scale(1.05) translateY(-3px);
     transition: transform 0.25s ease-in-out;
 }
@@ -254,15 +260,15 @@ main {
 .search-filter-icon {
     width: 55px;
     height: 55px;
-    background-color: #DEEBFF;
-    outline: 2px solid #DEEBFF;
+    background-color: var(--light-blue);
+    outline: 2px solid var(--light-blue);
 }
 
 .search-filter a {
     padding: 0 20px 0 10px;
 }
 
-/* Search info ========================================== */
+/* Search info =================================== */
 #search-info {
     display: flex;
     align-items: center;
@@ -274,23 +280,33 @@ main {
     flex-shrink: 0;
     height: 25px;
     font-size: 13px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid var(--grey);
 }
 
 /* Block accomodations-container ========================================================================= */
 
+/* Properties for both accomodations sections */
 #accomodations-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 700px;
 }
 
 .accomodations {
-    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
     border-radius: 20px;
     padding: 2%;
     box-sizing: border-box;
     margin-top: 0;
+    height: 100%;
+}
+
+.accomodations h2 {
+    height: 9%;
+    flex-shrink: 2;
 }
 
 #accomodations-container .card-details > * {
@@ -315,14 +331,28 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex: 0 82%;
+    align-content: space-between;
 }
 
 #accomodations .card {
     width: 30%;
+    margin: 2% 0;
 }
 
 #accomodations .card img {
     height: 130px;
+}
+
+#accomodations .more {
+    height: 9%;
+    flex-shrink: 2;
+    position: relative;
+}
+
+#accomodations .more a {
+    position: absolute;
+    bottom: 0;
 }
 
 /* Section accomodations popular ========================== */
@@ -336,11 +366,18 @@ main {
 }
 
 #accomodations-popular h2 i {
-    color: #000000;
+    color: var(--black);
 }
 
+#accomodations-popular-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+}
 #accomodations-popular .card {
     display:flex;
+    
 }
 
 #accomodations-popular .accomodation-img {
@@ -363,11 +400,16 @@ main {
     align-self: flex-end;
 }
 
-/* Section activities =================================== */
+/* Section activities ================================================================================ */
+#activities {
+    margin-top: 60px;
+}
+
 #activities-content {
     display: flex;
     flex-flow: column wrap;
     height: 500px;
+    margin-top: 3%;
     justify-content: space-between;
     align-content: space-between;
 }
@@ -409,9 +451,9 @@ main {
     height: 45%;
 }
 
-/* Footer =========================================================== */
+/* Footer =================================================================================================== */
 #footer-container {
-    background-color: #F2F2F2;
+    background-color: var(--grey);
     display: flex;
     justify-content: center;
     margin-top: 30px;

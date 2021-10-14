@@ -1,6 +1,6 @@
-/* Responsives properties ======================================= */
+/* Responsives properties ============================================================================================= */
 
-/* All screen under 1200px */
+/* All screen under 1200px =============================================== */
 @media screen and (max-width: 1199px) {
 
     /* Section search */
@@ -13,17 +13,21 @@
     }
 } 
 
-/* Tablet and smartphone properties ============== */
+/* Tablet and smartphone properties (All screen under 992px) ============= */
 @media screen and (max-width: 992px) {
 
-    /* GLOBAL PROPERTIES */
+    /* Global properties ================================== */
     .card,
     .card:hover {
         transform: none;
         transition: none;
     }
 
-    /* HEADER ============================== */
+    h2 {
+        margin: 20px 0;
+    }
+
+    /* Header ============================================ */
     header {
         flex-direction: column;
         align-items: center;
@@ -42,21 +46,21 @@
         width: 50%;
         padding: 20px 0;
         text-align: center;
-        border-bottom: 3px solid #DEEBFF;
+        border-bottom: 3px solid var(--grey);
     }
 
     header nav ul li:hover {
         border-top: none;
         padding-top: 20px;
-        border-bottom: 3px solid #0065FC;
+        border-bottom: 3px solid var(--blue);
     }
 
-    /* MAIN =============================== */
+    /* Main ============================================ */
     #main-container {
         padding: 0;
     }
 
-    /* Section search ============== */
+    /* Section search ====================== */
     #search > * {
         margin: 40px 0;
     }
@@ -70,7 +74,7 @@
     #search-form form .fa-search {
         display: inline;
         background-color: transparent;
-        color: #ffffff;  
+        color: var(--white);  
     }
     
     #search-form form .search-text-button {
@@ -87,7 +91,11 @@
         transition: none;
     }
 
-    /* Section accomodations ====== */
+    /* Section accomodations ============= */
+    #accomodations-container {
+        height: inherit;
+    }
+
     #accomodations {
         flex-basis: 100%;
         order: 2;
@@ -103,7 +111,15 @@
         order: 1;
     }
 
+    #accomodations .more {
+        height: 50px;
+    }
+
     /* Section activities =================================== */
+    #activities {
+        margin-top: 0;
+    }
+    
     #activities-content {
         height: inherit;
         gap: 30px;
@@ -114,15 +130,19 @@
     }
 }
 
-/* Only tablet properties ======================== */
+/* Only tablet properties (All screen above 767 and under 992px) ======================== */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    /* HEADER */
+    /* Header ============================================== */
     header img {
         padding: 40px;
     }
 
-    /* SECTION ACCOMODATIONS */
+    /* Section accomodations =============================== */
+    .card {
+        margin-bottom: 20px;
+    }
+
     #accomodations .card img {
         height: 300px;
     }
@@ -131,7 +151,7 @@
         height: 200px;
     }
 
-    /* SECTION ACTIVITIES */
+    /* Section activities ================================== */
     #activities-content .card .activities-img {
         height: 300px;
     }
@@ -140,7 +160,7 @@
         padding: 0 2%;
     }
 
-    /* FOOTER */
+    /* Footer ============================================== */
     footer {
         justify-content: space-between;
     }
@@ -150,10 +170,10 @@
     }
 }
 
-/* Only smartphone properties ==================== */
+/* Only smartphone properties (All screen under 768px) ================================ */
 @media screen and (max-width: 767px) {
 
-    /* GLOBAL PROPERTIES */
+    /* Global properties ================================== */
     h1 {
         font-size: 22px;
     }
@@ -179,20 +199,20 @@
     }
 
     section {
-        margin: 20px 0;
+        margin: 0;
     }
 
     .card {
         margin-bottom: 10px;
     }
 
-    /* HEADER */
+    /* Header ========================================= */
     header img {
         width: 80px;
         padding: 20px;
     }
 
-    /* SECTION SEARCH */
+    /* Section search ================================= */
     #search {
         padding: 0 10px;
     }
@@ -202,7 +222,7 @@
         padding: 15px 20px;
     }
 
-    /* SECTION ACCOMODATIONS */
+    /* Section accomodations ========================== */
     .accomodations {
         padding: 5%;
     }
@@ -223,7 +243,7 @@
         height: 130px;
     }
 
-    /* SECTION ACTIVITIES */
+    /* Section activities =========================== */
     #activities {
         padding: 5%;
     }
@@ -232,7 +252,7 @@
         height: 120px;
     }
 
-    /* FOOTER */
+    /* Footer ======================================= */
     footer {
         flex-direction: column;
     }
